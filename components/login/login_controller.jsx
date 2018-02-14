@@ -601,8 +601,8 @@ export default class LoginController extends React.Component {
     }
 
     render() {
-        this.props.history.push('/gitlab/login');
-        return;
+        //this.props.history.push('/gitlab/login');
+        //return;
         let content;
         let customContent;
         let customClass;
