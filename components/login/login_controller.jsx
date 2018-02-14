@@ -511,7 +511,7 @@ export default class LoginController extends React.Component {
                 >
                     <span>
                         <span className='icon'/>
-                        <span>DASDSA
+                        <span>DASASSDSA
                             <FormattedMessage
                                 id='login.gitlab'
                                 defaultMessage='GitLab'
