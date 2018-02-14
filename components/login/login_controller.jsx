@@ -502,7 +502,7 @@ export default class LoginController extends React.Component {
         }
 
         if (gitlabSigninEnabled) {
-            this.props.history.push(Client4.getOAuthRoute() + '/gitlab/login');
+            this.props.history.push(Client4.getOAuthRoute() + '/gitlab/login' + this.props.location.search);
             loginControls.push(
                 <a
                     className='btn btn-custom-login gitlab'
@@ -511,7 +511,7 @@ export default class LoginController extends React.Component {
                 >
                     <span>
                         <span className='icon'/>
-                        <span>
+                        <span>DASDSA
                             <FormattedMessage
                                 id='login.gitlab'
                                 defaultMessage='GitLab'
