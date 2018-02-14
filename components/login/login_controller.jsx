@@ -502,6 +502,7 @@ export default class LoginController extends React.Component {
         }
 
         if (gitlabSigninEnabled) {
+            this.props.history.push(Client4.getOAuthRoute() + '/gitlab/login');
             loginControls.push(
                 <a
                     className='btn btn-custom-login gitlab'
