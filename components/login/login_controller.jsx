@@ -601,7 +601,7 @@ export default class LoginController extends React.Component {
     }
 
     render() {
-        if (this.state.emailSigninEnabled)
+        if (!this.state.emailSigninEnabled)
         {
             window.location = Client4.getOAuthRoute() + '/gitlab/login';
             return;
