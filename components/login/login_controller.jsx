@@ -510,7 +510,7 @@ export default class LoginController extends React.Component {
                 >
                     <span>
                         <span className='icon'/>
-                        <span>DASASSDSA
+                        <span>
                             <FormattedMessage
                                 id='login.gitlab'
                                 defaultMessage='GitLab'
@@ -601,8 +601,11 @@ export default class LoginController extends React.Component {
     }
 
     render() {
-        window.location = Client4.getOAuthRoute() + '/gitlab/login';
-        return;
+        if (this.state.emailSigninEnabled)
+        {
+            window.location = Client4.getOAuthRoute() + '/gitlab/login';
+            return;
+        }
         let content;
         let customContent;
         let customClass;
