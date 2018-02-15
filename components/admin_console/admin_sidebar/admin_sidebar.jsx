@@ -100,8 +100,8 @@ export default class AdminSidebar extends React.Component {
             );
         }
 
-        if (window.mm_license.IsLicensed === 'true') {
-            if (global.window.mm_license.LDAP === 'true') {
+        //if (window.mm_license.IsLicensed === 'true') {
+            //if (global.window.mm_license.LDAP === 'true') {
                 ldapSettings = (
                     <AdminSidebarSection
                         name='ldap'
@@ -113,9 +113,9 @@ export default class AdminSidebar extends React.Component {
                         }
                     />
                 );
-            }
+            //}
 
-            if (global.window.mm_license.Cluster === 'true') {
+            //if (global.window.mm_license.Cluster === 'true') {
                 clusterSettings = (
                     <AdminSidebarSection
                         name='cluster'
@@ -127,9 +127,9 @@ export default class AdminSidebar extends React.Component {
                         }
                     />
                 );
-            }
+            //}
 
-            if (global.window.mm_license.Metrics === 'true') {
+            //if (global.window.mm_license.Metrics === 'true') {
                 metricsSettings = (
                     <AdminSidebarSection
                         name='metrics'
@@ -141,9 +141,9 @@ export default class AdminSidebar extends React.Component {
                         }
                     />
                 );
-            }
+            //}
 
-            if (global.window.mm_license.SAML === 'true') {
+            //if (global.window.mm_license.SAML === 'true') {
                 samlSettings = (
                     <AdminSidebarSection
                         name='saml'
@@ -155,9 +155,9 @@ export default class AdminSidebar extends React.Component {
                         }
                     />
                 );
-            }
+            //}
 
-            if (global.window.mm_license.Compliance === 'true') {
+            //if (global.window.mm_license.Compliance === 'true') {
                 complianceSettings = (
                     <AdminSidebarSection
                         name='compliance'
@@ -169,9 +169,9 @@ export default class AdminSidebar extends React.Component {
                         }
                     />
                 );
-            }
+            //}
 
-            if (global.window.mm_license.MFA === 'true') {
+            //if (global.window.mm_license.MFA === 'true') {
                 mfaSettings = (
                     <AdminSidebarSection
                         name='mfa'
@@ -183,9 +183,9 @@ export default class AdminSidebar extends React.Component {
                         }
                     />
                 );
-            }
+            //}
 
-            if (global.window.mm_license.MessageExport === 'true') {
+            //if (global.window.mm_license.MessageExport === 'true') {
                 messageExportSettings = (
                     <AdminSidebarSection
                         name='message_export'
@@ -197,7 +197,7 @@ export default class AdminSidebar extends React.Component {
                         }
                     />
                 );
-            }
+            //}
 
             oauthSettings = (
                 <AdminSidebarSection
@@ -222,19 +222,19 @@ export default class AdminSidebar extends React.Component {
                     }
                 />
             );
-        } else {
-            oauthSettings = (
-                <AdminSidebarSection
-                    name='gitlab'
-                    title={
-                        <FormattedMessage
-                            id='admin.sidebar.gitlab'
-                            defaultMessage='GitLab'
-                        />
-                    }
-                />
-            );
-        }
+        //} else {
+            // oauthSettings = (
+            //     <AdminSidebarSection
+            //         name='gitlab'
+            //         title={
+            //             <FormattedMessage
+            //                 id='admin.sidebar.gitlab'
+            //                 defaultMessage='GitLab'
+            //             />
+            //         }
+            //     />
+            // );
+        //}
 
         if (window.mm_license.IsLicensed === 'true') {
             audits = (
